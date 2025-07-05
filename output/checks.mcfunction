@@ -1,4 +1,0 @@
-function stellarity:mechanic/altar_of_accursed/crafting/general
-function stellarity:mechanic/altar_of_accursed/crafting/tools
-function stellarity:mechanic/altar_of_accursed/crafting/armor
-function stellarity:mechanic/altar_of_accursed/crafting/weapons
