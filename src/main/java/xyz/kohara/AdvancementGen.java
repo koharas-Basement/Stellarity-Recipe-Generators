@@ -147,12 +147,12 @@ public class AdvancementGen {
 
         AdvancementData.Display display = new AdvancementData.Display();
         display.title.add(Map.of(
-                "translate", "stellarity.advancements.aota_recipe_book",
+                "translate", "advancements.stellarity.aota_recipe_book",
                 "bold", true,
                 "color", "dark_purple"
         ));
         display.description.add(Map.of(
-                "translate", "stellarity.advancements.aota_recipe_book.description"
+                "translate", "advancements.stellarity.aota_recipe_book.description"
         ));
         display.background = "minecraft:block/obsidian";
         display.announceToChat = false;
@@ -166,7 +166,7 @@ public class AdvancementGen {
         Gson gson = new Gson();
         Type type = new TypeToken<Map<String, Object>>() {
         }.getType();
-        Map<String, Object> criteria = gson.fromJson("{\"recipe\":{\"trigger\":\"minecraft:inventory_changed\",\"conditions\":{\"items\":[{\"predicates\":{\"minecraft:custom_data\":{\"stellarity.special_item\":\"endonomicon\"}}}]}}}", type);
+        Map<String, Object> criteria = gson.fromJson("{\"recipe\":{\"trigger\":\"minecraft:inventory_changed\",\"conditions\":{\"items\":[{\"predicates\":{\"minecraft:custom_data\":{\"stellarity.item\":\"endonomicon\"}}}]}}}", type);
 
         advancement.display = display;
         advancement.criteria = criteria;
