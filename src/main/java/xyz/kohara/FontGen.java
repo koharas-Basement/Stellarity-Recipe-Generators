@@ -67,7 +67,7 @@ public class FontGen {
             ITEM_CHAR.put(mapping[0].trim(), character);
         }
 
-        exportFontData(fontData, "aota.json");
+        exportFontData(fontData, "altar_of_the_accursed.json");
     }
 
     public static void exportFontData(FontData fontData, String outputPath) throws IOException {

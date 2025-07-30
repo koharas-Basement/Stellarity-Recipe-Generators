@@ -93,7 +93,7 @@ public class AdvancementGen {
             recipeData.ingredients().forEach((item, amount) -> {
                 description.add(Map.of(
                         "text", FontGen.ITEM_CHAR.get(item.replace(".", ":")),
-                        "font", "stellarity:aota",
+                        "font", "stellarity:altar_of_the_accursed",
                         "color", "white"
                 ));
                 if (amount != 1) {
@@ -147,12 +147,12 @@ public class AdvancementGen {
 
         AdvancementData.Display display = new AdvancementData.Display();
         display.title.add(Map.of(
-                "translate", "advancements.stellarity.aota_recipe_book",
+                "translate", "advancements.stellarity.altar_of_the_accursed_recipe_book",
                 "bold", true,
                 "color", "dark_purple"
         ));
         display.description.add(Map.of(
-                "translate", "advancements.stellarity.aota_recipe_book.description"
+                "translate", "advancements.stellarity.altar_of_the_accursed_recipe_book.description"
         ));
         display.background = "minecraft:block/obsidian";
         display.announceToChat = false;

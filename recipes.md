@@ -1,7 +1,7 @@
 ### General
 ## Endonomicon
 minecraft:enchanted_book
--> stellarity:mechanic/altar_of_accursed/crafting/items/special/endonomicon-function(stellarity:endonomicon)
+-> stellarity:mechanic/altar_of_the_accursed/crafting/items/special/endonomicon-function(stellarity:endonomicon)
 
 ## Chorus Plating
 iron_ingot
@@ -12,7 +12,7 @@ popped_chorus_fruit-2
 stellarity:enderite_smithing_template
 purpur_block-9
 stellarity:enderite_shard-5
--> stellarity:mechanic/altar_of_accursed/crafting/items/special/smithing_template-function(stellarity:enderite_smithing_template)
+-> stellarity:mechanic/altar_of_the_accursed/crafting/items/special/smithing_template-function(stellarity:enderite_smithing_template)
 
 ## Book of Jinx
 book-1

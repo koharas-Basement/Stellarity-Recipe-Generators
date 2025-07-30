@@ -114,7 +114,7 @@ public class HaruGen {
                     if (!categoryFunction.exists()) {
                         boolean created = categoryFunction.createNewFile();
                         try (BufferedWriter writer = new BufferedWriter(new FileWriter(craftingFunction, true))) {
-                            writer.append("function stellarity:mechanic/altar_of_accursed/crafting/" + category + "\n");
+                            writer.append("function stellarity:mechanic/altar_of_the_accursed/crafting/" + category + "\n");
                         }
                         if (!created) {
                             System.err.println("Failed to create file: " + category);
@@ -128,15 +128,15 @@ public class HaruGen {
                                 Map<String, Integer> ingredients = recipeData.ingredients();
                                 writer.append("execute if score @s stellarity.misc matches " + ingredients.keySet().size() + " \\\n");
                                 for (String item : ingredients.keySet()) {
-                                    writer.append("   if entity @e[type=item,distance=..1.5,tag=stellarity.aota." + item +
-                                            ",scores={stellarity.aota.count=" + ingredients.get(item) + "}] \\\n");
+                                    writer.append("   if entity @e[type=item,distance=..1.5,tag=stellarity.altar_of_the_accursed." + item +
+                                            ",scores={stellarity.altar_of_the_accursed.count=" + ingredients.get(item) + "}] \\\n");
                                 }
                                 switch (recipeData.resultType()) {
                                     case LOOT -> writer.append(
-                                            "   run function stellarity:mechanic/altar_of_accursed/crafting/macro/craft_generic {loot:\"" + recipeData.result() + "\"}\n"
+                                            "   run function stellarity:mechanic/altar_of_the_accursed/crafting/macro/craft_generic {loot:\"" + recipeData.result() + "\"}\n"
                                     );
                                     case LOOT_PARENT -> writer.append(
-                                            "   run function stellarity:mechanic/altar_of_accursed/crafting/macro/craft_weapon {loot:\"" + recipeData.result() + "\", parent:\"" + recipeData.parent() + "\"}\n"
+                                            "   run function stellarity:mechanic/altar_of_the_accursed/crafting/macro/craft_weapon {loot:\"" + recipeData.result() + "\", parent:\"" + recipeData.parent() + "\"}\n"
                                     );
                                     case FUNCTION -> writer.append("   run function " + recipeData.result() + "\n");
                                 }
