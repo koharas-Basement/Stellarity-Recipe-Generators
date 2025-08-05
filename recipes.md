@@ -38,7 +38,7 @@ nether_star-2
 stellarity:enderite_shard-64
 stellarity:starlight_soot-64
 netherite_ingot-4
--> stellarity:item/porta_altar
+-> stellarity:item/satchel_of_voids
 
 ### Tools
 ## Shulker Pickaxe
