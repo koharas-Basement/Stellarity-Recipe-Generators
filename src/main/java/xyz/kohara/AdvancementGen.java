@@ -166,7 +166,7 @@ public class AdvancementGen {
         Gson gson = new Gson();
         Type type = new TypeToken<Map<String, Object>>() {
         }.getType();
-        Map<String, Object> criteria = gson.fromJson("{\"recipe\":{\"trigger\":\"minecraft:inventory_changed\",\"conditions\":{\"items\":[{\"predicates\":{\"minecraft:custom_data\":{\"stellarity.item\":\"endonomicon\"}}}]}}}", type);
+        Map<String, Object> criteria = gson.fromJson("{\"recipe\":{\"trigger\":\"minecraft:inventory_changed\",\"conditions\":{\"items\":[{\"predicates\":{\"minecraft:custom_data\":{\"stellarity:item\":\"endonomicon\"}}}]}}}", type);
 
         advancement.display = display;
         advancement.criteria = criteria;
