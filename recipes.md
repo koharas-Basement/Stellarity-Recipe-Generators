@@ -24,7 +24,7 @@ stellarity:enderite_shard-10
 book-1
 ender_pearl-16
 stellarity:enderite_shard-32
--> stellarity:item/spellbook/grand_tome_of_teleportation
+-> stellarity:item/spellbook/book_of_conveyance
 
 ## Crest of The End
 shield

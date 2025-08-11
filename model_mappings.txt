@@ -2,7 +2,7 @@ stellarity:item/tool/shulker_axe->stellarity:shulker_axe
 stellarity:item/tool/shulker_pickaxe->stellarity:shulker_pickaxe
 stellarity:item/material/chorus_plating->stellarity:chorus_plating
 stellarity:item/spellbook/book_of_jinx->stellarity:book_of_jinx
-stellarity:item/spellbook/grand_tome_of_teleportation->stellarity:book_of_conveyance
+stellarity:item/spellbook/book_of_conveyance->stellarity:book_of_conveyance
 stellarity:item/trinket/crest_of_the_end->minecraft:shield
 stellarity:item/satchel_of_voids->stellarity:satchel_of_voids
 stellarity:item/tool/shulker_shovel->stellarity:shulker_shovel
